@@ -28,11 +28,11 @@ func main() {
 	bot := slacker.NewClient(os.Getenv("SLACK_BOT_TOKEN"), os.Getenv("SLACK_APP_TOKEN"))
 	go printCommandEvents(bot.CommandEvents())
 
-	bot.Command("hello", helloCmd)
-	bot.Command("url: <prompt>", urlCmd)
-	bot.Command("upload: <prompt>", uploadCmd)
-	bot.Command("credits", creditsCmd)
-	bot.Command("?", helpCmd)
+	bot.Command("dalle-hello", helloCmd)
+	bot.Command("dalle-url <prompt>", urlCmd)
+	bot.Command("dalle-upload <prompt>", uploadCmd)
+	bot.Command("dalle-credits", creditsCmd)
+	bot.Command("dalle-help", helpCmd)
 
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()

@@ -37,9 +37,10 @@ var helpCmd = &slacker.CommandDefinition{
 	Description: "Show help",
 	Handler: func(botCtx slacker.BotContext, request slacker.Request, response slacker.ResponseWriter) {
 		response.Reply("Available commands:\n" +
-			"• hello\n" +
-			"• url: <prompt>\n" +
-			"• upload: <prompt>\n" +
-			"• ?")
+			"• dalle-hello: Say hello to dalle-bot\n" +
+			"• dalle-url <prompt>: Create an image from a prompt and return the URL\n" +
+			"• dalle-upload <prompt>: Create an image from a prompt and upload it to the channel\n" +
+			"• dalle-credits: Show remaining credits\n" +
+			"• dalle-help: Show help")
 	},
 }
