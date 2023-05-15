@@ -31,6 +31,8 @@ func main() {
 	bot.Command("hello", helloCmd)
 	bot.Command("url: <prompt>", urlCmd)
 	bot.Command("upload: <prompt>", uploadCmd)
+	bot.Command("credits", creditsCmd)
+	bot.Command("?", helpCmd)
 
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
