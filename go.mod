@@ -9,6 +9,7 @@ require (
 )
 
 require (
+	github.com/go-errors/errors v1.4.2
 	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/robfig/cron v1.2.0 // indirect
 	github.com/shomali11/commander v0.0.0-20220716022157-b5248c76541a // indirect
